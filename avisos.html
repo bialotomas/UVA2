@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avisos - Cursada</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+  <!-- Navegación -->
+  <header class="bg-indigo-700 text-white shadow-md">
+    <div class="container mx-auto px-4 py-4">
+      <!-- Navegación móvil -->
+      <div class="flex justify-between items-center md:hidden">
+        <h1 class="text-xl font-bold">Mi Cursada</h1>
+        <button id="menu-toggle" class="focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Menú móvil desplegable -->
+      <nav id="mobile-menu" class="hidden md:hidden mt-4">
+        <ul class="space-y-2">
+          <li><a href="index.html" class="block py-2 px-4 hover:bg-indigo-800 rounded">Home</a></li>
+          <li><a href="avisos.html" class="block py-2 px-4 bg-indigo-800 rounded">Avisos</a></li>
+          <li><a href="sobre-mi.html" class="block py-2 px-4 hover:bg-indigo-800 rounded">Sobre mí</a></li>
+          <li><a href="materias.html" class="block py-2 px-4 hover:bg-indigo-800 rounded">Materias 2025</a></li>
+          <li><a href="contacto.html" class="block py-2 px-4 hover:bg-indigo-800 rounded">Contacto</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Navegación desktop -->
+      <nav class="hidden md:block">
+        <div class="flex justify-between items-center">
+          <h1 class="text-2xl font-bold">Mi Cursada</h1>
+          <ul class="flex space-x-6">
+            <li><a href="index.html" class="py-2 px-4 hover:bg-indigo-800 rounded transition duration-300">Home</a></li>
+            <li><a href="avisos.html" class="py-2 px-4 bg-indigo-800 rounded">Avisos</a></li>
+            <li><a href="sobre-mi.html" class="py-2 px-4 hover:bg-indigo-800 rounded transition duration-300">Sobre mí</a></li>
+            <li><a href="materias.html" class="py-2 px-4 hover:bg-indigo-800 rounded transition duration-300">Materias 2025</a></li>
+            <li><a href="contacto.html" class="py-2 px-4 hover:bg-indigo-800 rounded transition duration-300">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="container mx-auto px-4 py-8 flex-grow">
+    <h1 class="text-3xl font-bold text-indigo-800 mb-6">Avisos</h1>
+    
+    <section class="bg-white rounded-lg shadow-md p-6">
+      <h2 class="text-2xl font-semibold text-indigo-700 mb-4">Tareas pendientes</h2>
+      
+      <ul class="space-y-4">
+        <li class="flex items-start p-3 border-l-4 border-indigo-500 bg-indigo-50 rounded-r-md">
+          <div class="flex-shrink-0 mr-3">
+            <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+            </svg>
+          </div>
+          <div>
+            <p class="font-semibold text-indigo-800">Testing de Aplicaciones</p>
+            <p class="text-gray-700">Leer documentación de pruebas unitarias.</p>
+            <p class="text-sm text-gray-500 mt-1">Fecha límite: 15/05/2025</p>
+          </div>
+        </li>
+        
+        <li class="flex items-start p-3 border-l-4 border-yellow-500 bg-yellow-50 rounded-r-md">
+          <div class="flex-shrink-0 mr-3">
+            <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+            </svg>
+          </div>
+          <div>
+            <p class="font-semibold text-yellow-800">Liderazgo y Negociación</p>
+            <p class="text-gray-700">Preparar exposición sobre liderazgo situacional.</p>
+            <p class="text-sm text-gray-500 mt-1">Fecha límite: 20/05/2025</p>
+          </div>
+        </li>
+        
+        <li class="flex items-start p-3 border-l-4 border-green-500 bg-green-50 rounded-r-md">
+          <div class="flex-shrink-0 mr-3">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+            </svg>
+          </div>
+          <div>
+            <p class="font-semibold text-green-800">Matemática Discreta</p>
+            <p class="text-gray-700">Resolver ejercicios del capítulo 2.</p>
+            <p class="text-sm text-gray-500 mt-1">Fecha límite: 18/05/2025</p>
+          </div>
+        </li>
+        
+        <li class="flex items-start p-3 border-l-4 border-purple-500 bg-purple-50 rounded-r-md">
+          <div class="flex-shrink-0 mr-3">
+            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+            </svg>
+          </div>
+          <div>
+            <p class="font-semibold text-purple-800">Gestión de Personas</p>
+            <p class="text-gray-700">Leer caso práctico sobre cultura organizacional.</p>
+            <p class="text-sm text-gray-500 mt-1">Fecha límite: 22/05/2025</p>
+          </div>
+        </li>
+        
+        <li class="flex items-start p-3 border-l-4 border-blue-500 bg-blue-50 rounded-r-md">
+          <div class="flex-shrink-0 mr-3">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+            </svg>
+          </div>
+          <div>
+            <p class="font-semibold text-blue-800">Diseño y Desarrollo Web</p>
+            <p class="text-gray-700">Subir actividad UVA 2 a GitHub Pages.</p>
+            <p class="text-sm text-gray-500 mt-1">Fecha límite: 25/05/2025</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-800 text-white py-6">
+    <div class="container mx-auto px-4">
+      <p class="text-center">&copy; 2025 Mi Cursada - Creado con HTML y Tailwind CSS</p>
+    </div>
+  </footer>
+
+  <!-- Script para el menú móvil -->
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

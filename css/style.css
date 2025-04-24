@@ -1,0 +1,47 @@
+
+a, button, input, textarea {
+    transition: all 0.3s ease;
+  }
+  
+  /* Mejora de accesibilidad para el foco */
+  a:focus, button:focus, input:focus, textarea:focus {
+    outline: 2px solid #6366f1;
+    outline-offset: 2px;
+  }
+  
+  /* Estilos para impresión */
+  @media print {
+    header, footer, nav, .no-print {
+      display: none !important;
+    }
+    
+    body {
+      font-size: 12pt;
+      color: #000;
+      background: #fff;
+    }
+    
+    main {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      page-break-after: avoid;
+      page-break-inside: avoid;
+    }
+    
+    table {
+      page-break-inside: avoid;
+    }
+    
+    img {
+      max-width: 100% !important;
+    }
+  }
